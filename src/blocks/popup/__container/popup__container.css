@@ -1,0 +1,6 @@
+@import url('_type/popup__container_type_form.css');
+
+.popup__container {
+  margin: 40px;
+  position: relative;
+}

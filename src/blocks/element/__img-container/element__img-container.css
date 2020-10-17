@@ -1,0 +1,8 @@
+.element__img-container {
+  position: relative;
+  height: 0;
+  border: none;
+  padding-top: 100%;
+  cursor: pointer;
+  background-size: cover;
+}

@@ -1,0 +1,8 @@
+.element__info {
+  color: #000;
+  min-height: 86px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}

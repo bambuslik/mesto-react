@@ -31,6 +31,7 @@ function App(props) {
     setIsEditAvatarPopupOpen('');
     setIsEditProfilePopupOpen('');
     setIsAddPlacePopupOpen('');
+    //on gh-pages undefined in console
     setSelectedCard(undefined);
   }
 

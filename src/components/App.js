@@ -3,13 +3,13 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
-import PopupWithImage from "./PopupWithImage";
+import ImagePopup from "./ImagePopup";
 
 function App(props) {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState('');
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState('');
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState('');
-  const [selectedCard, setSelectedCard] = React.useState('');
+  const [selectedCard, setSelectedCard] = React.useState();
 
   function handleCardClick(card){
     setSelectedCard(card);
@@ -31,7 +31,7 @@ function App(props) {
     setIsEditAvatarPopupOpen('');
     setIsEditProfilePopupOpen('');
     setIsAddPlacePopupOpen('');
-    setSelectedCard('');
+    setSelectedCard(undefined);
   }
 
   return (
@@ -48,11 +48,11 @@ function App(props) {
       </PopupWithForm>
       <PopupWithForm title="Редактировать профиль" name="profile" isOpen={isEditProfilePopupOpen} onClose={closeAllPopups}>
         <label className="form__field">
-          <input type="text" name="name" className="form__input-text input-profile-name" required minLength="2" maxLength="40" autoComplete="off"/>
+          <input type="text" placeholder="Имя" name="name" className="form__input-text input-profile-name" required minLength="2" maxLength="40" autoComplete="off"/>
           <span className="form__input-error"></span>
         </label>
         <label className="form__field">
-          <input type="text" name="job" className="form__input-text input-profile-job" required minLength="2" maxLength="200" autoComplete="off"/>
+          <input type="text" placeholder="Занятие" name="job" className="form__input-text input-profile-job" required minLength="2" maxLength="200" autoComplete="off"/>
           <span className="form__input-error"></span>
         </label>
       </PopupWithForm>
@@ -66,7 +66,7 @@ function App(props) {
           <span className="form__input-error"></span>
         </label>
       </PopupWithForm>
-      <PopupWithImage card={selectedCard} onClose={closeAllPopups} />
+      <ImagePopup card={selectedCard} onClose={closeAllPopups} />
     </div>
 
   );

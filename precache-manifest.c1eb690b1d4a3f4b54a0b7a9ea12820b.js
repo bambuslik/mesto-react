@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fee5783c9a175cb352681ca2c63747da",
+    "revision": "4ff45534ce5849914280f88dc4051815",
     "url": "/mesto-react/index.html"
   },
   {
-    "revision": "5218cca5437e812259eb",
-    "url": "/mesto-react/static/css/main.fa2683c1.chunk.css"
+    "revision": "b706fe55920431bdd28b",
+    "url": "/mesto-react/static/css/main.165e4613.chunk.css"
   },
   {
     "revision": "a209c6bbce83e17987c9",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mesto-react/static/js/2.464ddcfc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5218cca5437e812259eb",
-    "url": "/mesto-react/static/js/main.b2441353.chunk.js"
+    "revision": "b706fe55920431bdd28b",
+    "url": "/mesto-react/static/js/main.ad192043.chunk.js"
   },
   {
     "revision": "6e04319a44e5e6859875",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mesto-react/static/media/edit-btn.58afbe73.svg"
   },
   {
-    "revision": "d476a8b86d0b656cfa463c1148e96069",
-    "url": "/mesto-react/static/media/edit-profile-hover.d476a8b8.svg"
+    "revision": "34c4685038e8cf551566cb4ee96e20e5",
+    "url": "/mesto-react/static/media/edit-profile-hover.34c46850.svg"
   },
   {
     "revision": "9b809a1b37577533dbfb302c85629aef",

@@ -11,6 +11,14 @@
   outline: none;
 }
 
+.element__trash_visible {
+  display: block;
+}
+
+.element__trash_hidden {
+  display: none;
+}
+
 .element__trash:hover {
   opacity: .6;
 }

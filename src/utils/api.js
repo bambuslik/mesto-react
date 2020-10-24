@@ -83,7 +83,7 @@ class Api {
       });
   }
 
-  setLike(cardId) {
+  _setLike(cardId) {
     return fetch(`${this._apiUrl}/v1/${this._cohort}/cards/likes/${cardId}`,
       {
         method: 'PUT',
@@ -97,7 +97,7 @@ class Api {
       });
   }
 
-  unsetLike(cardId) {
+  _unsetLike(cardId) {
     return fetch(`${this._apiUrl}/v1/${this._cohort}/cards/likes/${cardId}`,
       {
         method: 'DELETE',
@@ -109,6 +109,10 @@ class Api {
         if (res.ok) return res.json();
         return Promise.reject(`Лайк не удален! Ошибка запроса: ${res.status}, ${res.statusText}`);
       });
+  }
+
+  changeLikeCardStatus(cardId, isLiked) {
+    return isLiked ? this._unsetLike(cardId) : this._setLike(cardId);
   }
 
   setAvatar(avatar) {

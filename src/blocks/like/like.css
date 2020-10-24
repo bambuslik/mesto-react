@@ -1,5 +1,6 @@
 @import url('__btn/like__btn.css');
 @import url('__btn/_status_active/like__btn_status_active.css');
+@import url('__btn/_status_inactive/like__btn_status_inactive.css');
 @import url('__counter/like__counter.css');
 
 .like {
